@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: %pluginName
+Bundle-SymbolicName: ar.edu.unju.fi.empleado.tests;singleton:=true
+Automatic-Module-Name: ar.edu.unju.fi.empleado.tests
+Bundle-Version: 1.0.0.qualifier
+Bundle-ClassPath: .
+Bundle-Vendor: %providerName
+Bundle-Localization: plugin
+Bundle-RequiredExecutionEnvironment: JavaSE-21
+Export-Package: empleado.tests
+Require-Bundle: org.eclipse.core.runtime,
+ ar.edu.unju.fi.empleado;visibility:=reexport,
+ org.eclipse.emf.ecore.xmi;visibility:=reexport,
+ org.junit;visibility:=reexport
+Bundle-ActivationPolicy: lazy

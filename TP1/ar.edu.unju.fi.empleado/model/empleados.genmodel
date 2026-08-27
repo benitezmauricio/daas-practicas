@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/ar.edu.unju.fi.empleado/src" modelPluginID="ar.edu.unju.fi.empleado"
+    modelName="Empleados" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="21.0" copyrightFields="false"
+    operationReflection="true" importOrganizing="true">
+  <foreignModel>empleados.ecore</foreignModel>
+  <genPackages prefix="Empleado" disposableProviderFactory="true" ecorePackage="empleados.ecore#/">
+    <genClasses ecoreClass="empleados.ecore#//Persona">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute empleados.ecore#//Persona/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute empleados.ecore#//Persona/nombre"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute empleados.ecore#//Persona/legajo"/>
+    </genClasses>
+    <genClasses ecoreClass="empleados.ecore#//Usuario">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute empleados.ecore#//Usuario/userName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute empleados.ecore#//Usuario/password"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference empleados.ecore#//Usuario/domicilio"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference empleados.ecore#//Usuario/responsable"/>
+    </genClasses>
+    <genClasses ecoreClass="empleados.ecore#//Domicilio">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute empleados.ecore#//Domicilio/personal"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute empleados.ecore#//Domicilio/laboral"/>
+    </genClasses>
+    <genClasses ecoreClass="empleados.ecore#//Responsable"/>
+  </genPackages>
+</genmodel:GenModel>
