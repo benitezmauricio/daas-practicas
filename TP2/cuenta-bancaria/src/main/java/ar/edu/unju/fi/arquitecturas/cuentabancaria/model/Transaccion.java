@@ -4,23 +4,19 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import java.sql.Time;
+import java.util.Date;
 
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
 
-public class Cliente {
+public class Transaccion {
+    private Date fecha;
+    private Time hora;
+    private float monto;
+    private TipoTransaccion tipo;
+    private EstadoTransaccion estado_transaccion;
 
-    private String nombre;
-    private Integer cuil;
-    private String mail;
-    private Integer telefono;
-    private String direccion;
-
-    public void registrarCLiente(){
-
-    }
 }
-
-
